@@ -1,84 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <img class="logo logo-header" src="images/logo-device.svg" width="145" height="37" alt="Логотип Девайс">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
-          <button class="button search-button-icon" type="submit" value="Найти"></button>
-          <input class="field" type="text" name="search-form" placeholder="Поиск по сайту" id="search-form" value="Текст поиска"
-            required>
-          <button class="button search-button" type="submit" value="Найти">Найти</button>
-        </form>
-        <nav class="navigation-user">
-          <ul class="navigation-user-list">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-link-get-in" href="#">
-                Войти
-              </a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-link-compare" href="#">
-                Сравнить
-              </a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-link-basket" href="#">
-                <span class="navigation-number-of-products">
-                  2
-                </span>
-                Корзина
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="navigation-menu">
-          <ul class="navigation-menu-list">
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link navigation-menu-link-product-catalog" href="catalog.html">Каталог товаров
-                <button class="navigation-menu-button-catalog-within">+</button>
-                <ul class="navigation-menu-catalog-link-within">
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Экшн-камеры</a>
-                  </li>
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Умные часы</a>
-                  </li>
-                  <li class="whithin-item">
-                    <a class="whithin-item-link href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="wrapper wrapper-header">
+          <img class="logo logo-header" src="images/logo-device.svg" width="145" height="37" alt="Логотип Девайс">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
+            <button class="button search-button-icon" type="submit" value="Найти"></button>
+            <input class="field" type="text" name="search-form" placeholder="Поиск по сайту" id="search-form"
+              value="Текст поиска" required>
+            <button class="button search-button" type="submit" value="Найти">Найти</button>
+          </form>
+          <nav class="navigation-user">
+            <ul class="navigation-user-list">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-link-get-in" href="#">
+                  Войти
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-link-compare" href="#">
+                  Сравнить
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-link-basket" href="#">
+                  <span class="navigation-number-of-products">
+                    2
+                  </span>
+                  Корзина
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navigation-menu">
+            <ul class="navigation-menu-list">
+              <li class="navigation-menu-item">
+                <a class="navigation-menu-link navigation-menu-link-product-catalog" href="catalog.html">Каталог товаров
+                  <button class="navigation-menu-button-catalog-within">+</button>
+                  <ul class="navigation-menu-catalog-link-within">
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Виртуальная реальность</a>
+                    </li>
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Моноподы для cелфи</a>
+                    </li>
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Экшн-камеры</a>
+                    </li>
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Фитнес-браслеты</a>
+                    </li>
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Умные часы</a>
+                    </li>
+                    <li class="within-item">
+                      <a class="within-item-link href=" #">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="navigation-menu-item">
+                <a class="navigation-menu-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-menu-item">
+                <a class="navigation-menu-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-menu-item">
+                <a class="navigation-menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main class="main-container main-index">
-
+        <div class="wrapper wrapper-main">
+          <section class="gallery-items">
+            <h1 class="visually-hidden">Фотогалерея товаров</h1>
+            <div class="gallery-item gallery-item-drone">
+              <img class="slider-image" src="./images/drone-slider.png" alt="Квадрокоптер">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+              <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="slider-link-item-button" href="#">Подробнее</a>
+              <ul class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 вид товаров</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="slider-item-fittures">
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">800 м</b>
+                  <p class="slider-item-fitture-text">Дальность полета</p>
+                </li>
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">50 м</b>
+                  <p class="slider-item-fitture-text">Радиус поражения</p>
+                </li>
+              </ul>
+            </div>
+            <div class="gallery-item gallery-item-fitness-tracker visually-hidden">
+              <img class="slider-image" src="./images/fitness-tracker-image.png" alt="фитнес-браслеты">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+              <h2 class="slider-title">Худеем правильно!</h2>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="slider-link-item-button" href="#">Подробнее</a>
+              <ul class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">1 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">2 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 вид товаров</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="slider-item-fittures">
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">48 часов</b>
+                  <p class="slider-item-fitture-text">Без подзарядки</p>
+                </li>
+              </ul>
+            </div>
+            <div class="gallery-item gallery-item-selfie-stick visually-hidden">
+              <img class="slider-image" src="./images/selfie-stick.png" alt="палка для селфи">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+              <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="slider-link-item-button" href="#">Подробнее</a>
+              <ul class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">1 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 вид товаров</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">3 вид товаров</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="slider-item-fittures">
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">8,5 м</b>
+                  <p class="slider-item-fitture-text">Длина палки</p>
+                </li>
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">5 кг</b>
+                  <p class="slider-item-fitture-text">Вес палки</p>
+                </li>
+                <li class="slider-item-fitture">
+                  <b class="slider-item-fitture-number">Карбон</b>
+                  <p class="slider-item-fitture-text">Материал</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer">
 
@@ -90,4 +216,5 @@
       </div>
     </div>
   </body>
+
 </html>
