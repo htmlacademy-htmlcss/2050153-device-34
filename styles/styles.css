@@ -42,10 +42,10 @@ body {
 
 .wrapper {
   width: 1160px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -56,7 +56,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .button-link {
   display: inline-block;
@@ -102,7 +102,8 @@ body {
 }
 
 .button-link:active {
-  background: #FFCC33;;
+  background: #FFCC33;
+  ;
 }
 
 .button-link:focus-visible {
@@ -110,3 +111,214 @@ body {
 }
 
 /* Header */
+
+.wrapper-header {
+  margin: 15px 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo-link {
+  margin: 0;
+  cursor: pointer;
+  height: 37px;
+  position: absolute;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo-link:focus-visible {
+  border: 2px solid #AF4FFF;
+}
+
+.navigation-user-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 66px;
+  justify-content: flex-start;
+  width: 1160px;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.input-container {
+  width: 359px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  cursor: pointer;
+}
+
+.button-icon {
+  border: none;
+  border-radius: 50px 0 0 50px;
+  background-image: url(../images/header/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 40px;
+  margin: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.field {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 0;
+  flex-grow: 1;
+  border: none;
+  border-radius: 0 0 0 0;
+  cursor: pointer;
+}
+
+.input-container:focus-within {
+  outline: 2px solid hsl(273, 100%, 65%);
+}
+
+.input-container:disabled,
+.input-container:disabled:hover,
+.input-container:disabled:focus,
+.input-container:disabled:active {
+  opacity: 0.3;
+}
+
+.search-button {
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  background-color: inherit;
+  margin: 0;
+  padding: 10px 56px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  margin-left: -2px;
+}
+
+.search-button:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgb(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.search-button:disabled,
+.search-button:disabled:hover,
+.search-button:disabled:focus,
+.search-button:disabled:active {
+  opacity: 0.3;
+}
+
+.button-container:focus-within {
+  outline: 2px solid #AF4FFF;
+}
+
+.navigation-user {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-user-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 26px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.navigation-user-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-user-item {
+  margin-right: 18px;
+}
+
+.navigation-user-item:last-child {
+  margin-right: 60px;
+}
+
+.navigation-user-item-get-in {
+  margin-right: auto;
+}
+
+.navigation-user-link {
+  display: block;
+  min-width: 81px;
+  background-position: 0 9px, left;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-left: 27px;
+  color: inherit;
+}
+
+.navigation-user-link-get-in {
+  background-image: url(../images/header/get-in-icon.svg);
+  margin-right: 50px;
+}
+
+.navigation-user-link-compare {
+  background-image: url(../images/header/compare-icon.svg)
+}
+
+.navigation-user-link-basket {
+  background-image: url(../images/header/basket-icon.svg);
+  background-position: 7px 7px, left;
+  z-index: -2;
+  position: relative;
+}
+
+.navigation-number-of-products {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  left: -26px;
+  top: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  z-index: 1;
+}
+
+.navigation-number-of-products::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: -8px;
+  top: -3px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  z-index: -1;
+}
