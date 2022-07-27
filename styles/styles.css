@@ -110,6 +110,17 @@ body {
 
 /* Header */
 
+.main-header::before {
+  content: "";
+  width: 1160px;
+  min-height: 166px;
+  display: block;
+  position: absolute;
+  background-color: #FFE17F;
+  top: 27px;
+  z-index: -3;
+}
+
 .wrapper-header {
   margin: 15px 60px 0;
   display: flex;
@@ -185,6 +196,7 @@ body {
   background-repeat: no-repeat;
   background-position: 14px 9px;
   cursor: pointer;
+  background-color:  #FFE17F;
 }
 
 .input-container:focus-within {
@@ -331,6 +343,34 @@ body {
   background-color: #FFFFFF;
   border-radius: 50px;
   z-index: -1;
+}
+
+.tooltip-basket {
+  color: #ffffff;
+  padding: 20px;
+  display: block;
+  width: 320px;
+  background: #000000;
+  position: absolute;
+  top: 100%;
+  margin-top: 6px;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.tooltip-basket::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #000000;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .navigation-menu-link,
