@@ -94,11 +94,9 @@ body {
   background: #FFE17F;
 }
 
-.button-link:disabled,
-.button-link:disabled:hover,
-.button-link:disabled:focus,
-.button-link:disabled:active {
+.button-link:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .button-link:active {
@@ -150,6 +148,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 30px;
   width: 100%;
 }
@@ -167,21 +166,6 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
-  cursor: pointer;
-}
-
-.button-icon {
-  border: none;
-  border-radius: 50px 0 0 50px;
-  background-image: url(../images/header/search-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
-  margin: 0;
-  background-color: inherit;
   cursor: pointer;
 }
 
@@ -189,10 +173,14 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 0;
+  padding: 10px 0;
+  padding-left: 46px;
   flex-grow: 1;
-  border: none;
-  border-radius: 0 0 0 0;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  background-image: url(../images/header/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
   cursor: pointer;
 }
 
@@ -200,11 +188,9 @@ body {
   outline: 2px solid hsl(273, 100%, 65%);
 }
 
-.input-container:disabled,
-.input-container:disabled:hover,
-.input-container:disabled:focus,
-.input-container:disabled:active {
+.input-container:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .search-button {
@@ -229,11 +215,9 @@ body {
   background-color: #000000;
 }
 
-.search-button:disabled,
-.search-button:disabled:hover,
-.search-button:disabled:focus,
-.search-button:disabled:active {
+.search-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .button-container:focus-within {
@@ -243,7 +227,7 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  margin: 30px 60px;
+  margin: 30px 60px 0 27px;
 }
 
 .navigation-user-item,
@@ -254,12 +238,24 @@ body {
   align-items: center;
 }
 
+.navigation-menu-item {
+  position: relative;
+}
+
+.navigation-menu-item-delivery {
+  margin-left: 276px;
+  margin-right: 47px;
+}
+
+.navigation-menu-item-warranty {
+  margin-right: 51px;
+}
+
 .navigation-user-list,
 .navigation-menu-list {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 26px;
   list-style-type: none;
   justify-content: space-between;
 }
@@ -292,7 +288,8 @@ body {
 }
 
 .navigation-user-link-compare {
-  background-image: url(../images/header/compare-icon.svg)
+  background-image: url(../images/header/compare-icon.svg);
+  margin-left: 124px;
 }
 
 .navigation-user-link-basket {
@@ -329,7 +326,8 @@ body {
   z-index: -1;
 }
 
-.navigation-menu-link {
+.navigation-menu-link,
+.navigation-menu-button-catalog {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -339,23 +337,43 @@ body {
   text-transform: uppercase;
 }
 
-.navigation-menu-link-product-catalog{
+.navigation-menu-button-catalog {
+  appearance: none;
+  border: none;
+  background-color: inherit;
+  width: 296px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
+  cursor: pointer;
 }
 
-.navigation-menu-button-catalog-within {
+.navigation-menu-button-catalog::after {
+  content: "";
   width: 50px;
   height: 50px;
   border: 2px solid #000000;
   border-radius: 50%;
-  font-size: 22px;
-  font-family: 'Rubik';
-  background-color: inherit;
+  display: block;
+  box-sizing: border-box;
+  margin-left: 7px;
   z-index: 1;
+  position: relative;
 }
 
-.navigation-menu-button-catalog-within-opened {
-  display: none;
+.navigation-menu-button-catalog-within-closed::before {
+  content: url(../images/plus-icon-header.svg);
+  left: 257px;
+  top: 17px;
+  position: absolute;
+}
+
+.navigation-menu-button-catalog-within-opened::before {
+  content: url(../images/minus-icon-header.svg);
+  left: 257px;
+  top: 10px;
+  position: absolute;
 }
 
 .navigation-menu-within {
@@ -363,7 +381,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   width: 1160px;
-  top: 204px;
+  top: 33px;
   left: -60px;
   background-color:  #FFE17F;
   z-index: 0;
@@ -401,5 +419,12 @@ body {
 
 .within-item-link {
   cursor: pointer;
+}
 
+.hidden {
+  display: none;
+}
+
+.main-container {
+  flex-grow: 1;
 }
