@@ -196,7 +196,7 @@ body {
   background-repeat: no-repeat;
   background-position: 14px 9px;
   cursor: pointer;
-  background-color:  #FFE17F;
+  background-color: #FFE17F;
 }
 
 .input-container:focus-within {
@@ -347,16 +347,16 @@ body {
 
 .tooltip-basket {
   color: #ffffff;
-  padding: 20px;
+  padding: 1px;
   display: block;
   width: 320px;
-  background: #000000;
+  background-color: #1A1A1A;
   position: absolute;
   top: 100%;
   margin-top: 6px;
   left: 25%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 5;
 }
 
 .tooltip-basket::before {
@@ -370,7 +370,94 @@ body {
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 5;
+}
+
+.basket-list {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  padding: 19px;
+  box-sizing: border-box;
+  gap: 1px;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.basket-item-description {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  margin-left: 23px;
+  margin-right: auto;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.delete-button::before,
+.delete-button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 10px;
+  left: 5px;
+  width: 12px;
+  height: 1px;
+  background: #FFFFFF;
+}
+
+.delete-button::before {
+  transform: rotate(45deg);
+}
+
+.delete-button::after {
+  transform: rotate(-45deg);
+}
+
+.basket-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  min-height: 44px;
+  padding: 0 20px;
+}
+
+.button-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background-color: #000000;
+}
+
+.tooltip-basket-button {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 280px;
+  height: 50px;
 }
 
 .navigation-menu-link,
@@ -429,7 +516,7 @@ body {
   width: 1160px;
   top: 33px;
   left: -60px;
-  background-color:  #FFE17F;
+  background-color: #FFE17F;
   z-index: 0;
 }
 
