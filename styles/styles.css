@@ -122,6 +122,8 @@ body {
   cursor: pointer;
   height: 37px;
   position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .logo:hover {
@@ -141,6 +143,7 @@ body {
   flex-wrap: wrap;
   margin-top: 47px;
   justify-content: flex-start;
+  align-items: baseline;
   width: 1160px;
 }
 
@@ -173,14 +176,14 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
+  padding: 8px 0;
   padding-left: 46px;
   flex-grow: 1;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-image: url(../images/header/search-icon.svg);
   background-repeat: no-repeat;
-  background-position: 14px 12px;
+  background-position: 14px 9px;
   cursor: pointer;
 }
 
@@ -199,7 +202,7 @@ body {
   width: 160px;
   background-color: inherit;
   margin: 0;
-  padding: 10px 56px;
+  padding: 8px 45px;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
   margin-left: -2px;
@@ -227,14 +230,14 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  margin: 30px 60px 0 27px;
+  margin: 14px 60px 0 27px;
 }
 
 .navigation-user-item,
 .navigation-menu-item {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 18px;
+  margin-right: 21px;
   align-items: center;
 }
 
@@ -243,12 +246,12 @@ body {
 }
 
 .navigation-menu-item-delivery {
-  margin-left: 276px;
-  margin-right: 47px;
+  margin-left: 254px;
+  margin-right: 43px;
 }
 
 .navigation-menu-item-warranty {
-  margin-right: 51px;
+  margin-right: 49px;
 }
 
 .navigation-user-list,
@@ -277,24 +280,28 @@ body {
 
 .navigation-user-link {
   min-width: 81px;
-  background-position: 0 9px, left;
+  background-position: 3px 9px, left;
   background-repeat: no-repeat;
-  padding-left: 27px;
+  padding-left: 26px;
 }
 
 .navigation-user-link-get-in {
   background-image: url(../images/header/get-in-icon.svg);
+  background-position: 0 9px, left;
   margin-right: 50px;
+}
+
+.navigation-user-item-compare {
+  margin-left: 96px;
 }
 
 .navigation-user-link-compare {
   background-image: url(../images/header/compare-icon.svg);
-  margin-left: 124px;
 }
 
 .navigation-user-link-basket {
   background-image: url(../images/header/basket-icon.svg);
-  background-position: 7px 7px, left;
+  background-position: 10px 7px, left;
   z-index: -2;
   position: relative;
 }
@@ -303,8 +310,8 @@ body {
   position: relative;
   width: 21px;
   height: 21px;
-  left: -26px;
-  top: 0;
+  left: -23px;
+  top: -1px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -338,10 +345,10 @@ body {
 }
 
 .navigation-menu-button-catalog {
-  appearance: none;
   border: none;
   background-color: inherit;
-  width: 296px;
+  width: 294px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,15 +364,14 @@ body {
   border-radius: 50%;
   display: block;
   box-sizing: border-box;
-  margin-left: 7px;
   z-index: 1;
   position: relative;
 }
 
 .navigation-menu-button-catalog-within-closed::before {
   content: url(../images/plus-icon-header.svg);
-  left: 257px;
-  top: 17px;
+  left: 260px;
+  top: 16px;
   position: absolute;
 }
 
