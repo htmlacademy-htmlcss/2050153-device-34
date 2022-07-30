@@ -105,7 +105,7 @@ body {
 }
 
 .button-link:focus-visible {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 /* Header */
@@ -644,4 +644,56 @@ body {
 
 .catalog-category-link:focus-visible{
   outline: 2px solid #AF4FFF;
+}
+
+/* delivery-warranty-credit-information */
+
+.delivery-warranty-credit-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information-buttons {
+  display: grid;
+  gap: 35px;
+  padding: 65px 0;
+}
+
+.information-button {
+  width: 160px;
+  position: relative;
+}
+
+.information-button-current {
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.information-button-current::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 280px;
+  height: 41px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.information-button-current:hover {
+  color: rgba(255, 225, 127, 0.5);
+  background-color: #000000;
+}
+
+.information-button-current:active {
+  color: rgba(255, 225, 127, 0.3);
+  background-color: #000000;
+}
+
+.information-button-current:focus-visible {
+  outline: 2px solid #AF4FFF;
+  width: 280px;
+  text-align: start;
+  padding-left: 37px;
 }
