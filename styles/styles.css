@@ -110,7 +110,7 @@ body {
 
 /* Header */
 
-.main-header::before {
+.wrapper-header::before {
   content: "";
   width: 1160px;
   min-height: 166px;
@@ -122,19 +122,17 @@ body {
 }
 
 .wrapper-header {
-  margin: 15px 60px 0;
+  margin: 15px auto 0;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
 
 .logo-link {
-  margin: 0;
   cursor: pointer;
-  height: 37px;
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 5px;
+  left: 60px;
 }
 
 .logo:hover {
@@ -152,7 +150,8 @@ body {
 .navigation-user-line {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 47px;
+  margin-top: 61px;
+  margin-left: 60px;
   justify-content: flex-start;
   align-items: baseline;
   width: 1160px;
@@ -165,6 +164,7 @@ body {
   justify-content: flex-start;
   margin-top: 30px;
   width: 100%;
+  margin-left: 60px;
 }
 
 .search-form {
@@ -242,14 +242,14 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  margin: 14px 60px 0 27px;
+  margin: 14px 0 0 27px;
 }
 
 .navigation-user-item,
 .navigation-menu-item {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 21px;
+  margin-right: 22px;
   align-items: center;
 }
 
@@ -561,10 +561,6 @@ body {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
 .button-header {
   cursor: pointer;
 }
@@ -634,15 +630,15 @@ body {
   letter-spacing: -0.02em;
 }
 
-.catalog-category-link:hover .catalog-category-icon{
-  background-color:  #FFC700;
+.catalog-category-link:hover .catalog-category-icon {
+  background-color: #FFC700;
 }
 
 .catalog-category-link:active {
   opacity: 0.3;
 }
 
-.catalog-category-link:focus-visible{
+.catalog-category-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -652,6 +648,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.delivery-warranty-credit-information::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 289px;
+  background-color: #F0F0F0;
+  z-index: -1;
+  left: -1px;
+  top: 49%;
+}
+
+.information {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .information-buttons {
@@ -696,4 +710,97 @@ body {
   width: 280px;
   text-align: start;
   padding-left: 37px;
+}
+
+.information-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 116px;
+  border-left: 7px solid #000000;
+  margin-left: 120px;
+}
+
+.information-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.information-description {
+  margin: 0;
+  padding: 0;
+  margin-top: 34px;
+  display: block;
+  box-sizing: border-box;
+  width: 479px;
+  color: #444444;
+}
+
+.information::after {
+  position: absolute;
+  right: 62px;
+  top: 80px;
+}
+
+.delivery-information::after {
+  content: url(../images/delivery-icon-man.svg);
+}
+
+.warranty-information::after {
+  content: url(../images/warranty-icon.svg);
+}
+
+.credit-information::after {
+  content: url(../images/credit-icon.svg);
+}
+
+.hidden {
+  display: none;
+}
+
+/* rear-items-delivery */
+
+.rear-items-delivery {
+  display: flex;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-top: 142px;
+}
+
+.rear-items-delivery-link-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.rear-items-delivery-text {
+  width: 910px;
+  text-align: center;
+  background-color: #F0F0F0;
+  padding-top: 40px;
+  color: #000000;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.rear-items-delivery-icon {
+  display: block;
+  width: 125px;
+  padding: 30px 0;
+  background-color: #F0F0F0;
+}
+
+.rear-items-delivery-link-button:hover {
+  color: #FFE17F;
 }
