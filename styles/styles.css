@@ -658,8 +658,8 @@ body {
   min-height: 289px;
   background-color: #F0F0F0;
   z-index: -1;
-  left: -1px;
-  top: 49%;
+  left: 0;
+  top: 105px;
 }
 
 .information {
@@ -802,5 +802,5 @@ body {
 }
 
 .rear-items-delivery-link-button:hover {
-  color: #FFE17F;
+  background-color: #FFC700;
 }
