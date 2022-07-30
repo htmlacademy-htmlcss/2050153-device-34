@@ -630,15 +630,18 @@ body {
   letter-spacing: -0.02em;
 }
 
-.catalog-category-link:hover .catalog-category-icon {
+.catalog-category-link:hover .catalog-category-icon,
+.rear-items-delivery-link-button:hover .rear-items-delivery-icon-car {
   background-color: #FFC700;
 }
 
-.catalog-category-link:active {
+.catalog-category-link:active,
+.rear-items-delivery-link-button:active {
   opacity: 0.3;
 }
 
-.catalog-category-link:focus-visible {
+.catalog-category-link:focus-visible
+.rear-items-delivery-link-button:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -794,13 +797,22 @@ body {
   text-transform: uppercase;
 }
 
-.rear-items-delivery-icon {
-  display: block;
+.rear-items-delivery-icon,
+.rear-items-delivery-icon-car {
+  display: flex;
   width: 125px;
-  padding: 30px 0;
-  background-color: #F0F0F0;
 }
 
-.rear-items-delivery-link-button:hover {
-  background-color: #FFC700;
+.rear-items-delivery-icon-car {
+  background-color: #FFE17F;
+  background-image: url(../images/delivery-icon-car.svg);
+  min-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.rear-items-delivery-icon {
+  background-color: #F0F0F0;
+  padding: 30px 0;
 }
