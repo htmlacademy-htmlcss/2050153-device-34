@@ -1031,7 +1031,7 @@ body {
   line-height: 50px;
   margin: 0;
   margin-top: 47px;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .about-us-description {
@@ -1101,4 +1101,89 @@ body {
 
 .contacts-phone {
   color: #444444;
+}
+
+/* subscription */
+
+.subscription {
+  background-color: #F0F0F0;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+.subscription-description,
+.subscription-description-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  width: 348px;
+  margin: 0;
+  margin-left: 6px;
+}
+
+.subscription-instruction {
+  color: #444444;
+  margin: 0;
+  padding-top: 9px;
+  width: 560px;
+}
+
+.subscription-description-form {
+  margin-top: 140px;
+}
+
+.subscription-form {
+  align-items: center;
+}
+
+.field-subscription {
+  background-color: #F0F0F0;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  border-radius: 0;
+  color: #444444;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  width: 542px;
+  height: 54px;
+  padding: 0;
+  padding-left: 16px;
+}
+
+.subscription-button {
+  width: 253px;
+  height: 60px;
+  border: 3px solid #C4C4C4;
+  background-color: #F0F0F0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-left: -5px;
+}
+
+.subscription-description-form-info {
+  color: #444444;
+  position: relative;
+  margin: 0;
+  padding-left: 34px;
+  background-image: url(../images/tick-subscription.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 3px;
 }
