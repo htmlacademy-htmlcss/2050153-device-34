@@ -101,7 +101,6 @@ body {
 
 .button-link:active {
   background: #FFCC33;
-  ;
 }
 
 .button-link:focus-visible {
@@ -1086,6 +1085,11 @@ body {
   margin-top: 30px;
 }
 
+.about-us-description-link-button:focus-visible,
+.about-us-description-link-button-contact:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
 .about-us-inner-title {
   font-weight: 700;
   font-size: 24px;
@@ -1142,7 +1146,7 @@ body {
 }
 
 .subscription-form {
-  align-items: center;
+  align-items: end;
 }
 
 .field-subscription {
@@ -1175,6 +1179,22 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-left: -5px;
+  cursor: pointer;
+}
+
+.subscription-button:hover,
+.subscription-button:active {
+  background-color: #000000;
+  border: #000000;
+  color: #ffffff;
+}
+
+.subscription-button:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.subscription-button:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .subscription-description-form-info {
