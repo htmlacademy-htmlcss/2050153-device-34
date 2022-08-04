@@ -952,6 +952,7 @@ body {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  width: 1160px;
 }
 
 .rear-items-delivery-text {
@@ -972,7 +973,7 @@ body {
 .rear-items-delivery-icon,
 .rear-items-delivery-icon-car {
   display: flex;
-  width: 125px;
+  width: 157px;
 }
 
 .rear-items-delivery-icon-car {
@@ -990,3 +991,114 @@ body {
 }
 
 /* about-us */
+
+.wrapper-about-us {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.about-us-list:not(:last-child) {
+  margin-right: 108px;
+}
+
+.about-us-list::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+}
+
+.about-us-item-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.about-us-description {
+  color: #444444;
+  margin: 0;
+  margin-top: 30px;
+  letter-spacing: -0.003em;
+}
+
+.about-us-description-list {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.about-us-description-item {
+  position: relative;
+  padding-left: 34px;
+}
+
+.about-us-description-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.about-us-description-item b {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.about-us-description-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFC700;
+  left: 0;
+  top: 10px;
+}
+
+.about-us-description-link-button {
+  width: 270px;
+  margin-top: 24px;
+}
+
+.about-us-description-link-button-contact {
+  width: 259px;
+  margin-top: 30px;
+}
+
+.about-us-inner-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #444444;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.about-us-description-adress,
+.about-us-description-list-work-time {
+  margin-top: 15px;
+}
+
+.contacts-phone {
+  color: #444444;
+}
