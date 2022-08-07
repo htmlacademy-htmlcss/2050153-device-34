@@ -498,6 +498,8 @@ body {
   margin-right: 49px;
 }
 
+/* navigation-menu-button-catalog */
+
 .navigation-menu-link,
 .navigation-menu-button-catalog {
   font-family: 'Raleway';
@@ -525,7 +527,7 @@ body {
   content: "";
   width: 50px;
   height: 50px;
-  border: 2px solid #000000;
+  border: 2px solid rgb(0, 0, 0, 0.3);
   border-radius: 50%;
   left: 257px;
   display: block;
@@ -547,9 +549,10 @@ body {
 
 .navigation-menu-button-catalog:hover::after,
 .navigation-menu-button-catalog:active::after {
-  color: rgb(0, 0, 0, 1);
+  opacity: 1;
 }
 
+/* navigation-menu-within */
 
 .navigation-menu-within {
   display: block;
@@ -620,7 +623,7 @@ body {
 }
 
 .gallery-catalog-category-items {
-  margin-top: -22px;
+  margin-top: 14px;
 }
 
 /* slider */
