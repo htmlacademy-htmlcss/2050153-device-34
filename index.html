@@ -10,69 +10,74 @@
   <body>
     <header class="main-header">
       <div class="wrapper wrapper-header">
-        <a class="logo-link" href="#">
+        <a class="logo-link focus" href="#">
           <img class="logo logo-header" src="images/logo-device.svg" width="145" height="37"
             alt="Логотип интернет-магазина Девайс.">
         </a>
         <div class="navigation-user-line">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="input-container">
+            <div class="input-container focus">
               <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
-              <input class="field" type="text" name="search-form" placeholder="Поиск по сайту" id="search-form"
-                value="Текст поиска" required>
+              <input class="field field-search-form" type="text" name="search-form" placeholder="Поиск по сайту" id="search-form" required>
             </div>
-            <div class="button-container">
+            <div class="button-container focus">
               <button class="button search-button" type="submit" value="Найти">Найти</button>
             </div>
           </form>
           <nav class="navigation-user">
             <ul class="navigation-user-list">
               <li class="navigation-user-item navigation-user-item-get-in">
-                <a class="navigation-user-link navigation-user-link-get-in button-header" href="#">
+                <a class="navigation-user-link navigation-user-link-get-in button-header focus" href="#">
                   Войти
                 </a>
                 <a class="navigation-user-link navigation-user-link-get-in hidden" href="#">
                   Коля Петухов
-                  <span class="navigation-user-button-get-out">Выйти</span>
+                  <span class="navigation-user-button-get-out focus">Выйти</span>
                 </a>
               </li>
               <li class="navigation-user-item navigation-user-item-compare">
-                <a class="navigation-user-link navigation-user-link-compare button-header" href="#">
+                <a class="navigation-user-link navigation-user-link-compare button-header focus" href="#">
                   Сравнить
                 </a>
               </li>
               <li class="navigation-user-item navigation-user-item-basket">
-                <a class="navigation-user-link navigation-user-link-basket button-header" href="#">
-                  <span class="visually-hidden">Посмотреть, что в корзине.</span>
+                <button class="navigation-user-link navigation-user-button-basket button-header focus">
                   <span class="navigation-number-of-products">
                     2
                   </span>
-                  <span class="tooltip-basket hidden">
-                    <ul class="basket-list">
-                      <li class="basket-item">
-                        <img class="basket-item-image-selfie-stick" src="./images/product-small-selfie-stick.jpg"
-                          width="39" height="43">
-                        <p class="basket-item-description">Любительская селфи-палка</p>
-                        <div class="delete-button"></div>
-                      </li>
-                      <li class="basket-item">
-                        <img class="basket-item-image-selfie-stick-prof"
-                          src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43">
-                        <p class="basket-item-description">Профессиональная
-                          селфи-палка</p>
-                        <div class="delete-button"></div>
-                      </li>
-                    </ul>
-                    <p class="basket-total">
-                      <span>Товаров: 2</span>
-                      <span>Сумма: 2000 ₽</span>
-                    </p>
-                    <div class="button-frame">
-                      <button class="tooltip-basket-button">Открыть корзину</button>
-                    </div>
-                  </span>
                   Корзина
-                </a>
+                </button>
+                <div class="popover-basket hidden">
+                  <span class="visually-hidden">Посмотреть, что в корзине.</span>
+                  <ul class="basket-list">
+                    <li class="basket-item button-header focus-within">
+                      <img class="basket-item-image-selfie-stick" src="./images/product-small-selfie-stick.jpg"
+                        width="39" height="43">
+                      <p class="basket-item-description">Любительская селфи-палка</p>
+                    </li>
+                    <li class="delete-button button-header focus-within">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </li>
+                  </ul>
+                  <ul class="basket-list">
+                    <li class="basket-item button-header focus-within">
+                      <img class="basket-item-image-selfie-stick-prof"
+                        src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43">
+                      <p class="basket-item-description">Профессиональная
+                        селфи-палка</p>
+                    </li>
+                    <li class="delete-button button-header focus-within">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </li>
+                  </ul>
+                  <p class="basket-total">
+                    <span>Товаров: 2</span>
+                    <span>Сумма: 2000 ₽</span>
+                  </p>
+                  <div class="button-frame">
+                    <button class="popover-basket-button focus">Открыть корзину</button>
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>
@@ -81,48 +86,48 @@
           <ul class="navigation-menu-list">
             <li class="navigation-menu-item">
               <button
-                class="navigation-menu-button-catalog navigation-menu-button-catalog-within-closed button-header">Каталог
+                class="navigation-menu-button-catalog navigation-menu-button-catalog-within-closed button-header focus">Каталог
                 товаров</button>
               <button
-                class="navigation-menu-button-catalog navigation-menu-button-catalog-within-opened button-header hidden">Каталог
+                class="navigation-menu-button-catalog navigation-menu-button-catalog-within-opened button-header focus hidden">Каталог
                 товаров</button>
               <div class="navigation-menu-within hidden">
                 <div class="navigation-menu-catalog-links-within">
                   <ul class="within-group navigation-menu-catalog-within-group-1">
                     <li class="within-item within-item-group-1">
-                      <a class="within-item-link button-header" href="#">Виртуальная реальность</a>
+                      <a class="within-item-link button-header focus-within" href="#">Виртуальная реальность</a>
                     </li>
                     <li class="within-item within-item-group-1">
-                      <a class="within-item-link button-header" href="#">Моноподы для cелфи</a>
+                      <a class="within-item-link button-header focus-within" href="#">Моноподы для cелфи</a>
                     </li>
                     <li class="within-item within-item-group-1">
-                      <a class="within-item-link button-header" href="#">Экшн-камеры</a>
+                      <a class="within-item-link button-header focus-within" href="#">Экшн-камеры</a>
                     </li>
                   </ul>
                   <ul class="within-group navigation-menu-catalog-within-group-2">
                     <li class="within-item within-item-group-2">
-                      <a class="within-item-link button-header" href="#">Фитнес-браслеты</a>
+                      <a class="within-item-link button-header focus-within" href="#">Фитнес-браслеты</a>
                     </li>
                     <li class="within-item within-item-group-2">
-                      <a class="within-item-link button-header" href="#">Умные часы</a>
+                      <a class="within-item-link button-header focus-within" href="#">Умные часы</a>
                     </li>
                   </ul>
                   <ul class="within-group navigation-menu-catalog-within-group-3">
                     <li class="within-item within-item-group-3">
-                      <a class="within-item-link button-header" href="#">Квадрокоптеры</a>
+                      <a class="within-item-link button-header focus-within" href="#">Квадрокоптеры</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li class="navigation-menu-item navigation-menu-item-delivery">
-              <a class="navigation-menu-link button-header" href="#">Доставка</a>
+              <a class="navigation-menu-link button-header focus" href="#">Доставка</a>
             </li>
             <li class="navigation-menu-item navigation-menu-item-warranty">
-              <a class="navigation-menu-link button-header" href="#">Гарантия</a>
+              <a class="navigation-menu-link button-header focus" href="#">Гарантия</a>
             </li>
             <li class="navigation-menu-item">
-              <a class="navigation-menu-link button-header" href="#">Контакты</a>
+              <a class="navigation-menu-link button-header focus" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
