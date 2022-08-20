@@ -527,6 +527,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -568,6 +569,8 @@ body {
   top: 33px;
   left: -60px;
   background-color: #FFE17F;
+  padding-bottom: 33px;
+  z-index: 1;
 }
 
 .navigation-menu-catalog-links-within {
@@ -575,6 +578,7 @@ body {
   margin: 33px 60px 27px;
   grid-template-columns: 262px 211px 211px;
   gap: 0 30px;
+  min-height: 120px;
 }
 
 .within-group {
@@ -1608,24 +1612,32 @@ body {
   margin-top: 14px;
   width: 180px;
   border: none;
+  position: relative;
 }
 
 .button-minus,
 .button-plus {
+  position: absolute;
   width: 60px;
   height: 60px;
   border: none;
   cursor: pointer;
   padding: 0;
   background-color: #F0F0F0;
+  z-index: 2;
 }
 
 .button-minus {
   padding-bottom: 6px;
+  left: 0;
+}
+
+.button-plus {
+  right: 0;
 }
 
 .delivery-modal-field-quantity {
-  width: 60px;
+  width: 100%;
   margin: 0;
   text-align: center;
   box-sizing: border-box;
@@ -1657,17 +1669,16 @@ body {
 }
 
 .field-modal:invalid,
-.quantity-group:invalid {
+.delivery-modal-field-quantity:invalid {
   outline: 2px solid #FF3D3D;
+
 }
 
 .field-modal:invalid + .message-error {
   color: #ff3d3d;
 }
 
-.field-modal:placeholder-shown,
-.quantity-group:invalid .field-modal:placeholder-shown,
-.delivery-modal-field-quantity:invalid {
+.field-modal:placeholder-shown {
   outline: none;
 }
 
