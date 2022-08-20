@@ -18,7 +18,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="input-container focus-within-no-offset">
               <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
-              <input class="field field-search-form" type="text" name="search-form" placeholder="Поиск по сайту"
+              <input class="field field-search-form" type="text" name="search-form" placeholder="Текст поиска"
                 id="search-form" required>
             </div>
             <div class="button-container focus-within-no-offset">
@@ -51,29 +51,31 @@
                 <div class="popover-basket hidden">
                   <span class="visually-hidden">Посмотреть, что в корзине.</span>
                   <ul class="basket-list">
-                    <li class="basket-item button-header focus-within">
-                      <img class="basket-item-image-selfie-stick" src="./images/product-small-selfie-stick.jpg"
-                        width="39" height="43">
-                      <p class="basket-item-description">Любительская селфи-палка</p>
+                    <li class="basket-item">
+                      <a class="basket-link button-header focus-within">
+                        <img class="basket-image basket-item-image-selfie-stick" src="./images/product-small-selfie-stick.jpg"
+                          width="39" height="43">
+                        <p class="basket-item-description">Любительская селфи-палка</p>
+                      </a>
+                      <div class="delete-button button-header focus-within">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </div>
                     </li>
-                    <li class="delete-button button-header focus-within">
-                      <span class="visually-hidden">Удалить товар из корзины</span>
-                    </li>
-                  </ul>
-                  <ul class="basket-list">
-                    <li class="basket-item button-header focus-within">
-                      <img class="basket-item-image-selfie-stick-prof"
-                        src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43">
-                      <p class="basket-item-description">Профессиональная
-                        селфи-палка</p>
-                    </li>
-                    <li class="delete-button button-header focus-within">
-                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    <li class="basket-item">
+                      <a class="basket-link button-header focus-within">
+                        <img class="basket-image basket-item-image-selfie-stick-prof"
+                          src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43">
+                        <p class="basket-item-description">Профессиональная
+                          селфи-палка</p>
+                      </a>
+                      <div class="delete-button button-header focus-within">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </div>
                     </li>
                   </ul>
                   <p class="basket-total">
-                    <span>Товаров: 2</span>
-                    <span>Сумма: 2000 ₽</span>
+                    <span class="basket-total-text">Товаров: 2</span>
+                    <span class="basket-total-text">Сумма: 2000 ₽</span>
                   </p>
                   <div class="button-frame">
                     <button class="popover-basket-button focus">Открыть корзину</button>

@@ -375,28 +375,41 @@ body {
 
 .basket-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   list-style-type: none;
   margin: 0;
   background-color: #000000;
-  padding: 19px;
+  padding: 18px 20px;
   box-sizing: border-box;
 }
 
 .basket-item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   cursor: pointer;
 }
 
+.basket-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.basket-item:not(:first-child) {
+  margin-top: 16px;
+}
+
+.basket-link {
+  display: flex;
+  align-items: center;
+}
+
 .basket-item-description {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   width: 160px;
+  margin: 0;
+
   margin-left: 23px;
   margin-right: auto;
 }
@@ -404,7 +417,8 @@ body {
 .delete-button {
   position: relative;
   display: block;
-  top: 10px;
+  top: -16px;
+  right: -4px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -436,8 +450,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  min-height: 44px;
-  padding: 0 20px;
+  min-height: 47px;
+  padding: 1px 20px;
+}
+
+.basket-total-text {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button-frame {
@@ -1674,7 +1693,7 @@ body {
 
 }
 
-.field-modal:invalid + .message-error {
+.field-modal:invalid+.message-error {
   color: #ff3d3d;
 }
 
