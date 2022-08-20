@@ -534,7 +534,7 @@
                 <input class="delivery-modal-field-what-deliver field-modal focus-within" type="text" id="what-deliver"
                   name="what-deliver" placeholder="В свободной форме" required>
               </p>
-              <p class="field-group field-group-quantity">
+              <div class="field-group field-group-quantity">
                 <label class="delivery-label delivery-label-quantity" for="quantity">
                   Количество:
                   <span class="tooltip">
@@ -543,7 +543,7 @@
                     </button>
                   </span>
                 </label>
-                <span class="quantity-group">
+                <fieldset class="quantity-group">
                   <button class="button-minus focus-within">
                     <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 0H0v2h16V0Z" fill="#000" /></svg>
@@ -554,8 +554,8 @@
                     <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" /></svg>
                   </button>
-                </span>
-              </p>
+                </fieldset>
+              </div>
             </div>
             <button class="button-link delivery-modal-form-button focus" type="submit">Отправить</button>
           </form>

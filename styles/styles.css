@@ -1569,7 +1569,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: #FF3D3D;
+  color: #000000;
   display: flex;
 }
 
@@ -1603,7 +1603,11 @@ body {
 
 .quantity-group {
   display: flex;
+  padding: 0;
+  margin: 0;
   margin-top: 14px;
+  width: 180px;
+  border: none;
 }
 
 .button-minus,
@@ -1640,21 +1644,36 @@ body {
   background-color: #DCDCDC;
 }
 
-.field-modal:valid {
+.field-modal:valid,
+.button-minus:hover,
+.button-plus:hover {
+  background-color: #EBEBEB;
+}
+
+.button-minus:active,
+.button-plus:active {
+  opacity: 0.3;
   background-color: #EBEBEB;
 }
 
 .field-modal:invalid,
-.quantity-group:focus-within:invalid+.delivery-modal-field-quantity:invalid{
-  border: 2px solid #FF3D3D;
+.quantity-group:invalid {
+  outline: 2px solid #FF3D3D;
+}
+
+.field-modal:invalid + .message-error {
+  color: #ff3d3d;
 }
 
 .field-modal:placeholder-shown,
+.quantity-group:invalid .field-modal:placeholder-shown,
 .delivery-modal-field-quantity:invalid {
-  border: none;
+  outline: none;
 }
 
-.field-modal:disabled {
+.field-modal:disabled,
+.button-minus:disabled,
+.button-plus:disabled {
   opacity: 0.3;
   pointer-events: none;
 }
