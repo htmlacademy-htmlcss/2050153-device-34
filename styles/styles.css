@@ -588,14 +588,14 @@ body {
   top: 33px;
   left: -60px;
   background-color: #FFE17F;
-  padding-bottom: 33px;
+  padding-bottom: 8px;
   z-index: 1;
 }
 
 .navigation-menu-catalog-links-within {
   display: grid;
-  margin: 33px 60px 27px;
-  grid-template-columns: 262px 211px 211px;
+  margin: 23px 60px 27px;
+  grid-template-columns: 221px 182px 211px;
   gap: 0 30px;
   min-height: 120px;
 }
@@ -620,12 +620,15 @@ body {
 }
 
 .within-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .within-item-link {
   text-decoration: none;
   color: inherit;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .button-header {
@@ -652,7 +655,7 @@ body {
 }
 
 .gallery-catalog-category-items {
-  margin-top: 14px;
+  margin-top: -23px;
 }
 
 /* slider */
