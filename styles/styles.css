@@ -963,9 +963,8 @@ body {
 
 .information-item {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   padding-left: 116px;
 }
 
@@ -1715,6 +1714,10 @@ body {
 
 .field-modal:placeholder-shown {
   outline: none;
+}
+
+.field-modal:placeholder-shown+.message-error {
+  color: #000000
 }
 
 .field-modal:disabled,
