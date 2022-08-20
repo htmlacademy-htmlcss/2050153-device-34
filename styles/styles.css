@@ -677,12 +677,23 @@ body {
   display: flex;
 }
 
-.gallery-item-drone::before {
-  content: url(../images/slider-group-1.svg);
+.gallery-item::before {
   position: absolute;
   left: 0;
   top: -143px;
   z-index: -1;
+}
+
+.gallery-item-drone::before {
+  content: url(../images/slider-group-1.svg);
+}
+
+.gallery-item-fitness-tracker::before {
+  content: url(../images/slider-group-2.svg);
+}
+
+.gallery-item-selfie-stick::before {
+  content: url(../images/slider-group-3.svg);
 }
 
 .slider-image {
