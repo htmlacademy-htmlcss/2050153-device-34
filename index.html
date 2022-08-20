@@ -53,8 +53,8 @@
                   <ul class="basket-list">
                     <li class="basket-item">
                       <a class="basket-link button-header focus-within">
-                        <img class="basket-image basket-item-image-selfie-stick" src="./images/product-small-selfie-stick.jpg"
-                          width="39" height="43">
+                        <img class="basket-image basket-item-image-selfie-stick"
+                          src="./images/product-small-selfie-stick.jpg" width="39" height="43">
                         <p class="basket-item-description">Любительская селфи-палка</p>
                       </a>
                       <div class="delete-button button-header focus-within">
@@ -309,41 +309,31 @@
       <section class="delivery-warranty-credit-information">
         <div class="wrapper">
           <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
-          <div class="delivery-information information information-current">
-            <div class="information-buttons">
-              <button class="information-button information-button-current focus" type="button">Доставка</button>
-              <button class="button-link information-button focus" type="button">Гарантия</button>
-              <button class="button-link information-button focus" type="button">Кредит</button>
-            </div>
-            <div class="information-item">
-              <h3 class="information-title">Доставка</h3>
-              <p class="information-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
-                совершенно бесплатно!&nbsp;Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-          </div>
-          <div class="warranty-information information hidden">
-            <div class="information-buttons">
-              <button class="button-link information-button focus" type="button">Доставка</button>
-              <button class="information-button information-button-current focus" type="button">Гарантия</button>
-              <button class="button-link information-button focus" type="button">Кредит</button>
-            </div>
-            <div class="information-item">
-              <h3 class="information-title">Гарантия</h3>
-              <p class="information-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-          </div>
-          <div class="credit-information information hidden">
-            <div class="information-buttons">
-              <button class="button-link information-button focus" type="button">Доставка</button>
-              <button class="button-link information-button focus" type="button">Гарантия</button>
-              <button class="information-button information-button-current focus" type="button">Кредит</button>
-            </div>
-            <div class="information-item">
-              <h3 class="information-title">Кредит</h3>
-              <p class="information-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
-                для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-            </div>
+          <div class="delivery-warranty-credit">
+            <ul class="delivery-information-buttons information information-current">
+              <li class="information-buttons">
+                <button class="button-link information-button information-button-active focus" type="button">Доставка</button>
+                <button class="button-link information-button focus" type="button">Гарантия</button>
+                <button class="button-link information-button focus" type="button">Кредит</button>
+              </li>
+            </ul>
+            <ul class="delivery-information-list">
+              <li class="information-item">
+                <h3 class="information-title">Доставка</h3>
+                <p class="information-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
+                  совершенно бесплатно!&nbsp;Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
+              </li>
+              <li class="information-item warranty-information information hidden">
+                <h3 class="information-title">Гарантия</h3>
+                <p class="information-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                  переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </li>
+              <li class="information-item credit-information information hidden">
+                <h3 class="information-title">Кредит</h3>
+                <p class="information-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
+                  для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </li>
+            </ul>
           </div>
           <div class="rear-items-delivery">
             <a class="rear-items-delivery-link-button focus" href="#">
@@ -377,7 +367,7 @@
                 <li class="about-us-description-item"><b>СДИК</b></li>
                 <li class="about-us-description-item"><b>ТоксБерри</b></li>
               </ol>
-              <a class="button-link about-us-description-link-button focus">Подробнее о нас</a>
+              <a class="button-link about-us-description-link-button focus" href="#">Подробнее о нас</a>
             </li>
           </ul>
           <ul class="about-us-list">
@@ -394,7 +384,7 @@
                 <li>пн—пт: с 10:00 до 22:00</li>
                 <li>сб—вс: с 10:00 до 19:00</li>
               </ol>
-              <a class="button-link about-us-description-link-button-contact focus">Напишите нам</a>
+              <a class="button-link about-us-description-link-button-contact focus" href="#">Напишите нам</a>
             </li>
           </ul>
         </div>
