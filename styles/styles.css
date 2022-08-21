@@ -1501,7 +1501,7 @@ body {
 
 .modal {
   margin: auto auto;
-  padding: 72px 80px;
+  padding: 54px 70px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border: 10px solid #000000;
@@ -1517,7 +1517,7 @@ body {
 .modal-header {
   position: relative;
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   justify-content: space-between;
 }
 
@@ -1526,8 +1526,7 @@ body {
   border: none;
   cursor: pointer;
   display: block;
-  margin-top: 1px;
-  margin-right: 3px;
+  margin-top: 28px;
   width: 26px;
   height: 26px;
   background-color: inherit;
@@ -1574,6 +1573,7 @@ body {
   line-height: 50px;
   color: #000000;
   padding: 0;
+  padding-top: 18px;
   margin: 0;
 }
 
@@ -1585,7 +1585,7 @@ body {
 .modal-group {
   display: grid;
   column-gap: 40px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .personal-details-group {
@@ -1612,7 +1612,7 @@ body {
   font-family: 'Rubik';
   font-size: 16px;
   line-height: 20px;
-  margin-top: 14px;
+  margin-top: 9px;
 }
 
 .delivery-modal-field-personal-details {
@@ -1670,7 +1670,7 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  margin-left: 8px;
+  margin-left: 9px;
   margin-top: 4px;
   cursor: pointer;
 }
@@ -1725,7 +1725,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 9px;
   width: 180px;
   border: none;
   position: relative;
