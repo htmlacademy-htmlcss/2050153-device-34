@@ -37,7 +37,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .wrapper {
@@ -84,14 +84,14 @@ body {
   width: 100%;
   height: 8px;
   position: absolute;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   left: 0%;
   top: 40%;
   z-index: -1;
 }
 
 .button-link:hover {
-  background: #FFE17F;
+  background: #ffe17f;
 }
 
 .button-link:disabled {
@@ -100,11 +100,11 @@ body {
 }
 
 .button-link:active {
-  background: #FFCC33;
+  background: #ffcc33;
 }
 
 .focus:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
   z-index: 1;
 }
@@ -117,7 +117,7 @@ body {
   min-height: 166px;
   display: block;
   position: absolute;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   top: 24px;
   z-index: -1;
 }
@@ -195,7 +195,7 @@ body {
   background-repeat: no-repeat;
   background-position: 14px 9px;
   cursor: pointer;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .field-search-form::placeholder {
@@ -221,7 +221,7 @@ body {
 }
 
 .search-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -339,7 +339,7 @@ body {
   height: 21px;
   left: -7px;
   top: -3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50px;
   z-index: -1;
 }
@@ -351,7 +351,7 @@ body {
   padding: 1px;
   display: block;
   width: 320px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   position: absolute;
   top: 100%;
   margin-top: 6px;
@@ -491,11 +491,11 @@ body {
 }
 
 .popover-basket-button:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .popover-basket-button:active {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   color: rgb(0, 0, 0, 0.3);
 }
 
@@ -587,7 +587,7 @@ body {
   width: 1160px;
   top: 33px;
   left: -60px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   padding-bottom: 8px;
   z-index: 1;
 }
@@ -863,7 +863,7 @@ body {
 }
 
 .catalog-category-icon {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .catalog-category-description {
@@ -878,7 +878,7 @@ body {
 
 .catalog-category-link:hover .catalog-category-icon,
 .rear-items-delivery-link-button:hover .rear-items-delivery-icon-car {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .catalog-category-link:active,
@@ -900,7 +900,7 @@ body {
   position: absolute;
   width: 100%;
   min-height: 289px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   z-index: -1;
   left: 0;
   top: 103px;
@@ -934,7 +934,7 @@ body {
 }
 
 .information-button-active {
-  color: #FFE17F;
+  color: #ffe17f;
   background-color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1042,7 +1042,7 @@ body {
 
 .rear-items-delivery-text {
   width: 910px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding-top: 42px;
   padding-left: 197px;
   color: #000000;
@@ -1062,7 +1062,7 @@ body {
 }
 
 .rear-items-delivery-icon-car {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-image: url(../images/delivery-icon-car.svg);
   min-height: 100px;
   background-position: center;
@@ -1071,7 +1071,7 @@ body {
 }
 
 .rear-items-delivery-icon {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 30px 0;
 }
 
@@ -1156,7 +1156,7 @@ body {
   height: 8px;
   border: none;
   border-radius: 50%;
-  background-color: #FFC700;
+  background-color: #ffc700;
   left: 0;
   top: 10px;
 }
@@ -1202,7 +1202,7 @@ body {
 /* subscription */
 
 .subscription {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding-top: 64px;
   padding-bottom: 56px;
 }
@@ -1242,9 +1242,9 @@ body {
 }
 
 .field-subscription {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
-  border-bottom: 3px solid #C4C4C4;
+  border-bottom: 3px solid #c4c4c4;
   border-radius: 0;
   color: #444444;
   font-family: inherit;
@@ -1284,8 +1284,8 @@ body {
 .subscription-button {
   width: 253px;
   height: 57px;
-  border: 3px solid #C4C4C4;
-  background-color: #F0F0F0;
+  border: 3px solid #c4c4c4;
+  background-color: #f0f0f0;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -1336,7 +1336,7 @@ body {
 }
 
 .logo-footer {
-  color: #FFC700;
+  color: #ffc700;
   margin-right: auto;
 }
 
@@ -1378,7 +1378,7 @@ body {
 .footer-contact-phone::before {
   content: "";
   position: absolute;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   height: 1px;
   bottom: 0;
@@ -1451,12 +1451,12 @@ body {
 
 .footer-social-item:hover,
 .footer-social-button:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .footer-social-item:active,
 .footer-social-button:active {
-  background-color: #FFC700;
+  background-color: #ffc700;
   color: rgb(68, 68, 68, 0.3);
 }
 
@@ -1474,7 +1474,7 @@ body {
 }
 
 .footer-link {
-  color: #FFC700;
+  color: #ffc700;
   padding-top: 7px;
 }
 
@@ -1605,7 +1605,7 @@ body {
 .field-modal {
   display: block;
   height: 60px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
   padding: 20px;
   box-sizing: border-box;
@@ -1739,7 +1739,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   z-index: 2;
 }
 
@@ -1769,24 +1769,24 @@ body {
 }
 
 .field-modal:hover {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .field-modal:valid,
 .button-minus:hover,
 .button-plus:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .button-minus:active,
 .button-plus:active {
   opacity: 0.3;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .field-modal:invalid,
 .delivery-modal-field-quantity:invalid {
-  outline: 2px solid #FF3D3D;
+  outline: 2px solid #ff3d3d;
 
 }
 
