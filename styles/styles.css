@@ -1532,13 +1532,13 @@ body {
 
 .modal-close-button {
   padding: 0;
-  margin-right: 3px;
+  margin-right: 2.5px;
   border: none;
   cursor: pointer;
   display: block;
   margin-top: 26px;
   width: 27px;
-  height: 25px;
+  height: 28px;
   background-color: inherit;
 }
 
@@ -1812,6 +1812,12 @@ body {
 
 .field-modal:placeholder-shown+.message-error {
   color: #000000
+}
+
+.field-modal:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
 }
 
 .field-modal:disabled,
