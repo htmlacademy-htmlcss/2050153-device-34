@@ -1709,11 +1709,11 @@ body {
 }
 
 .tooltip-toggle:focus {
-  outline: none !important;
+  outline: none;
 }
 
 .tooltip-toggle::-moz-focus-inner {
-  border: 0 !important;
+  border: 0;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
