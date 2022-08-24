@@ -1523,12 +1523,13 @@ body {
 
 .modal-close-button {
   padding: 0;
+  margin-right: 3px;
   border: none;
   cursor: pointer;
   display: block;
-  margin-top: 28px;
-  width: 26px;
-  height: 26px;
+  margin-top: 26px;
+  width: 27px;
+  height: 25px;
   background-color: inherit;
 }
 
@@ -1559,6 +1560,7 @@ body {
   opacity: 0.3;
 }
 
+.field-modal:focus-within,
 .modal-close-button:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
