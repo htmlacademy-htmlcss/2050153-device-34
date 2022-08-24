@@ -106,7 +106,7 @@ body {
 .focus:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Header */
@@ -357,7 +357,7 @@ body {
   margin-top: 6px;
   left: 25%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .popover-basket::before {
@@ -411,7 +411,6 @@ body {
   line-height: 20px;
   width: 160px;
   margin: 0;
-
   margin-left: 23px;
   margin-right: auto;
 }
