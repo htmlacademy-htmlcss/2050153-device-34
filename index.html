@@ -48,30 +48,30 @@
                   </span>
                   Корзина
                 </button>
-                <div class="popover-basket hidden">
+                <div class="popover-basket ">
                   <span class="visually-hidden">Посмотреть, что в корзине.</span>
                   <ul class="basket-list">
                     <li class="basket-item">
-                      <a class="basket-link button-header focus-within">
+                      <a class="basket-link button-header focus-within" href="#">
                         <img class="basket-image basket-item-image-selfie-stick"
                           src="./images/product-small-selfie-stick.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                         <p class="basket-item-description">Любительская селфи-палка</p>
                       </a>
-                      <div class="delete-button button-header focus-within">
+                      <button class="delete-button button-header focus-within">
                         <span class="visually-hidden">Удалить товар из корзины</span>
-                      </div>
+                      </button>
                     </li>
                     <li class="basket-item">
-                      <a class="basket-link button-header focus-within">
+                      <a class="basket-link button-header focus-within" href="#">
                         <img class="basket-image basket-item-image-selfie-stick-prof"
                           src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43" alt="Профессиональная
                           селфи-палка.">
                         <p class="basket-item-description">Профессиональная
                           селфи-палка</p>
                       </a>
-                      <div class="delete-button button-header focus-within">
+                      <button class="delete-button button-header focus-within">
                         <span class="visually-hidden">Удалить товар из корзины</span>
-                      </div>
+                      </button>
                     </li>
                   </ul>
                   <p class="basket-total">
@@ -149,7 +149,7 @@
                 <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
                 <div class="slider-item-buttons">
-                  <a class="button-link slider-link-item-button" href="#">Подробнее</a>
+                  <a class="button-link slider-link-item-button focus" href="#">Подробнее</a>
                   <ul class="slider-pagination">
                     <li class="slider-pagination-item">
                       <button class="slider-pagination-button slider-pagination-button-current focus" type="button">
@@ -497,7 +497,7 @@
       </div>
     </footer>
     <!-- modal-window -->
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <div class="modal modal-delivery">
         <section class="modal-content">
           <div class="modal-header">

@@ -402,6 +402,8 @@ body {
 .basket-link {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .basket-item-description {
@@ -421,6 +423,8 @@ body {
   right: -4px;
   width: 20px;
   height: 20px;
+  background-color: inherit;
+  border: none;
   cursor: pointer;
 }
 
@@ -1560,7 +1564,6 @@ body {
   opacity: 0.3;
 }
 
-.field-modal:focus-within,
 .modal-close-button:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
