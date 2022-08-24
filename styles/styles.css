@@ -1439,25 +1439,29 @@ body {
 .footer-social-item {
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  border-radius: 50%;
+}
+
+.footer-social-button {
+  color: rgb(68, 68, 68);
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   box-sizing: border-box;
+  padding-top: 5px;
+  padding-left: 12px;
   cursor: pointer;
 }
 
-.footer-social-button {
-  color: rgb(68, 68, 68);
+.button-twitter {
+  padding-top: 7px;
 }
 
-.footer-social-item:hover,
 .footer-social-button:hover {
   background-color: #ffc700;
 }
 
-.footer-social-item:active,
 .footer-social-button:active {
   background-color: #ffc700;
   color: rgb(68, 68, 68, 0.3);
