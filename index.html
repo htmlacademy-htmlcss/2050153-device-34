@@ -52,26 +52,26 @@
                   <span class="visually-hidden">Посмотреть, что в корзине.</span>
                   <ul class="basket-list">
                     <li class="basket-item">
-                      <a class="basket-link button-header focus-within">
+                      <a class="basket-link button-header focus-within" href="#">
                         <img class="basket-image basket-item-image-selfie-stick"
                           src="./images/product-small-selfie-stick.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                         <p class="basket-item-description">Любительская селфи-палка</p>
                       </a>
-                      <div class="delete-button button-header focus-within">
+                      <button class="delete-button button-header focus-within">
                         <span class="visually-hidden">Удалить товар из корзины</span>
-                      </div>
+                      </button>
                     </li>
                     <li class="basket-item">
-                      <a class="basket-link button-header focus-within">
+                      <a class="basket-link button-header focus-within" href="#">
                         <img class="basket-image basket-item-image-selfie-stick-prof"
                           src="./images/product-small-selfie-stick-prof.jpg" width="39" height="43" alt="Профессиональная
                           селфи-палка.">
                         <p class="basket-item-description">Профессиональная
                           селфи-палка</p>
                       </a>
-                      <div class="delete-button button-header focus-within">
+                      <button class="delete-button button-header focus-within">
                         <span class="visually-hidden">Удалить товар из корзины</span>
-                      </div>
+                      </button>
                     </li>
                   </ul>
                   <p class="basket-total">
@@ -149,7 +149,7 @@
                 <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
                 <div class="slider-item-buttons">
-                  <a class="button-link slider-link-item-button" href="#">Подробнее</a>
+                  <a class="button-link slider-link-item-button focus" href="#">Подробнее</a>
                   <ul class="slider-pagination">
                     <li class="slider-pagination-item">
                       <button class="slider-pagination-button slider-pagination-button-current focus" type="button">
@@ -445,7 +445,7 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item focus-within">
-                <a class="footer-social-button button-vk" href="https://t.me/htmlacademy">
+                <a class="footer-social-button button-telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Наш Телеграм</span>
                   <svg width="14" height="12" viewBox="0 0 14 12" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -455,7 +455,7 @@
                 </a>
               </li>
               <li class="footer-social-item focus-within">
-                <a class="footer-social-button button-telegram" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="footer-social-button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Наш Ютуб</span>
                   <svg width="16" height="11" viewBox="0 0 16 11" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -472,7 +472,7 @@
                 </a>
               </li>
               <li class="footer-social-item focus-within">
-                <a class="footer-social-button button-youtube" href="https://twitter.com/htmlacademy_ru">
+                <a class="footer-social-button button-twitter" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Наш Твиттер</span>
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -525,7 +525,7 @@
             <div class="modal-group delivery-group">
               <p class="field-group field-group-delivery">
                 <label class="delivery-label delivery-label-what-deliver" for="what-deliver">Что нужно привезти:</label>
-                <input class="delivery-modal-field-what-deliver field-modal focus-within" type="text" id="what-deliver"
+                <input class="delivery-modal-field-what-deliver field-modal focus" type="text" id="what-deliver"
                   name="what-deliver" placeholder="В свободной форме" required>
               </p>
               <div class="field-group field-group-quantity">
@@ -545,7 +545,7 @@
                       <path d="M16 0H0v2h16V0Z" fill="#000" /></svg>
                   </button>
                   <input class="delivery-modal-field-quantity field-modal focus-within" type="number"
-                    id="quantity" name="quantity" placeholder="1" min="0" max="99" step="1" required>
+                    id="quantity" name="quantity" placeholder="1" min="0" max="99" step="1" value="1" required>
                   <button class="button-plus focus-within">
                     <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" /></svg>
