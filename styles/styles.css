@@ -1508,7 +1508,9 @@ body {
 
 .modal {
   margin: auto auto;
-  padding: 54px 70px;
+  padding: 0 70px;
+  padding-top: 45px;
+  padding-bottom: 60px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border: 10px solid #000000;
@@ -1593,8 +1595,9 @@ body {
 .modal-group {
   display: grid;
   column-gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
+
 
 .personal-details-group {
   grid-template-columns: 360px 360px;
@@ -1656,6 +1659,7 @@ body {
 
 .delivery-group {
   grid-template-columns: 540px 180px;
+  margin-bottom: 43px;
 }
 
 .delivery-modal-field-what-deliver {
