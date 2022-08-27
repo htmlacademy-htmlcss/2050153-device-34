@@ -168,7 +168,6 @@ body {
 
 .search-form {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -193,7 +192,7 @@ body {
   border-radius: 50px 0 0 50px;
   background-image: url(../images/header/search-icon.svg);
   background-repeat: no-repeat;
-  background-position: 14px 9px;
+  background-position: left 16px center;
   cursor: pointer;
   background-color: #ffe17f;
 }
@@ -891,34 +890,29 @@ body {
 
 /* delivery-warranty-credit-information */
 
-.delivery-warranty-credit-information {
+.delivery-warranty-credit-information,
+.rear-items-delivery-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
-.delivery-warranty-credit-information::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  min-height: 289px;
+.delivery-warranty-credit-information {
   background-color: #f0f0f0;
-  z-index: -1;
-  left: 0;
-  top: 103px;
+  margin-top: 173px;
+  padding-bottom: 72px;
 }
 
 .delivery-warranty-credit {
   display: flex;
   align-items: flex-start;
   position: relative;
+  margin-top: -103px;
 }
 
 .information {
   display: flex;
   box-sizing: border-box;
-
 }
 
 .delivery-information-buttons {
@@ -1032,8 +1026,8 @@ body {
 .rear-items-delivery {
   display: flex;
   width: 100%;
-  margin-bottom: 72px;
-  margin-top: 139px;
+  margin-bottom: 66px;
+  margin-top: 67px;
 }
 
 .rear-items-delivery-link-button {
@@ -1047,7 +1041,9 @@ body {
   width: 910px;
   background-color: #f0f0f0;
   padding-top: 42px;
+  padding-bottom: 40px;
   padding-left: 197px;
+  padding-right: 100px;
   color: #000000;
   font-family: 'Raleway';
   font-style: normal;
@@ -1061,21 +1057,20 @@ body {
 .rear-items-delivery-icon,
 .rear-items-delivery-icon-car {
   display: flex;
-  width: 157px;
+  min-width: 125px;
+  min-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .rear-items-delivery-icon-car {
   background-color: #ffe17f;
   background-image: url(../images/delivery-icon-car.svg);
-  min-height: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
 }
 
 .rear-items-delivery-icon {
   background-color: #f0f0f0;
-  padding: 30px 0;
+  background-image: url(../images/i-round-icon.svg);
 }
 
 /* about-us */
@@ -1207,7 +1202,7 @@ body {
 .subscription {
   background-color: #f0f0f0;
   padding-top: 64px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 
 .subscription-description,
@@ -1242,6 +1237,7 @@ body {
 
 .subscription-form {
   align-items: end;
+  display: flex;
 }
 
 .field-subscription {
@@ -1256,7 +1252,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   width: 542px;
-  height: 51px;
+  min-height: 51px;
   padding: 0;
   padding-left: 16px;
   padding-top: 3px;
@@ -1286,7 +1282,7 @@ body {
 
 .subscription-button {
   width: 253px;
-  height: 57px;
+  min-height: 57px;
   border: 3px solid #c4c4c4;
   background-color: #f0f0f0;
   font-family: 'Raleway';
@@ -1297,14 +1293,13 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 0;
-  margin-left: -5px;
   cursor: pointer;
 }
 
 .subscription-button:hover,
 .subscription-button:active {
   background-color: #000000;
-  border: #000000;
+  border: 3px solid #000000;
   color: #ffffff;
 }
 
@@ -1330,7 +1325,7 @@ body {
 }
 
 .wrapper-footer {
-  padding-top: 65px;
+  padding-top: 64px;
   padding-bottom: 61px;
 }
 
@@ -1507,7 +1502,7 @@ body {
 }
 
 .modal {
-  margin: auto auto;
+  margin: 14% auto auto;
   padding: 0 70px;
   padding-top: 45px;
   padding-bottom: 60px;
@@ -1728,8 +1723,8 @@ body {
   border: 0;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus-visible + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus-visible+.tooltip-text {
   display: block;
 }
 
