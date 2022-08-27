@@ -890,33 +890,29 @@ body {
 
 /* delivery-warranty-credit-information */
 
-.delivery-warranty-credit-information {
+.delivery-warranty-credit-information,
+.rear-items-delivery-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.delivery-warranty-credit-information {
+  background-color: #f0f0f0;
+  margin-top: 173px;
+  padding-bottom: 72px;
 }
 
 .delivery-warranty-credit {
   display: flex;
   align-items: flex-start;
   position: relative;
-}
-
-.delivery-warranty-credit::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  background-color: #f0f0f0;
-  z-index: -1;
-  left: 0;
-  top: 103px;
+  margin-top: -103px;
 }
 
 .information {
   display: flex;
   box-sizing: border-box;
-
 }
 
 .delivery-information-buttons {
@@ -1030,8 +1026,8 @@ body {
 .rear-items-delivery {
   display: flex;
   width: 100%;
-  margin-bottom: 72px;
-  margin-top: 139px;
+  margin-bottom: 66px;
+  margin-top: 67px;
 }
 
 .rear-items-delivery-link-button {
@@ -1206,7 +1202,7 @@ body {
 .subscription {
   background-color: #f0f0f0;
   padding-top: 64px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 
 .subscription-description,
@@ -1297,7 +1293,6 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 0;
-  margin-left: -5px;
   cursor: pointer;
 }
 
@@ -1330,7 +1325,7 @@ body {
 }
 
 .wrapper-footer {
-  padding-top: 65px;
+  padding-top: 64px;
   padding-bottom: 61px;
 }
 
@@ -1728,8 +1723,8 @@ body {
   border: 0;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus-visible + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus-visible+.tooltip-text {
   display: block;
 }
 
